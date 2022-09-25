@@ -1,5 +1,7 @@
 package com.lannstark.lec12;
 
+import lec12.Person;
+
 public class JavaPerson {
 
   private static final int MIN_AGE = 1;
@@ -15,6 +17,11 @@ public class JavaPerson {
   private JavaPerson(String name, int age) {
     this.name = name;
     this.age = age;
+  }
+
+  public static void main(String[] args) {
+    Person.Companion.newBaby("ABC");
+    Person.newBaby("ABC");
   }
 
 }
